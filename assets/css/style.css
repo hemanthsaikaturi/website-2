@@ -15,6 +15,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
   color: #444444;
 }
 
@@ -1322,6 +1323,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   width: 100%;
+  float: inline-end;
   background: #f6f9ff;
   font-size: 14px;
 }
@@ -1498,4 +1500,32 @@ section {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+/******************
+RESOURCE PAGE
+********************/
+.resource-item {
+  text-align: justify;
+}
+
+.center-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.r-but {
+  background-color: transparent;
+  border: 2px #013289 solid;
+}
+
+.r-but:hover {
+  background-color: #a1c2fb;
+}
+
+@media screen and (max-width: 768px) {
+  .resource-item p {
+    font-size: smaller !important;
+  }
 }
