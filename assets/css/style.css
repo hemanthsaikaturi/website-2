@@ -1088,6 +1088,7 @@ body{
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1112,6 +1113,7 @@ body{
 
 .testimonials .testimonial-item p {
   font-style: italic;
+  text-align: justify;
   margin: 0 auto 15px auto;
 }
 

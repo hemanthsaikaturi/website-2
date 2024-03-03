@@ -281,7 +281,7 @@
     },
     slidesPerView: 'auto',
     pagination: {
-      el: '.swiper-pagination',
+      el: "",
       type: 'bullets',
       clickable: true
     },
