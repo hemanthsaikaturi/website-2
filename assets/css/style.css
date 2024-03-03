@@ -969,6 +969,10 @@ body{
   border-bottom: 0;
 }
 
+.faq{
+  width: 80%;
+}
+
 .faq .accordion-body {
   padding: 0 0 25px 0;
   border: 0;
@@ -990,7 +994,7 @@ body{
 }
 
 .portfolio {
-  background-color: #fafbff;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap img {
