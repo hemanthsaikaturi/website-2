@@ -52,7 +52,6 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 20px 0;
-  width: 100vw;
   overflow: hidden;
 }
 
@@ -70,7 +69,7 @@ section {
 }
 
 .head {
-  padding-top: 60px;
+  padding-top: 60px !important;
 }
 
 .section-header h2 {
@@ -235,10 +234,14 @@ body{
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+  .footer{
+    position: static !important;
+  }
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Header
@@ -273,9 +276,10 @@ body{
   margin-top: 3px;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 450px) {
   .header img {
-    max-height: 32px;
+    width: 90% !important;
+    padding: 10px 0;
 
   }
 }
@@ -1280,6 +1284,12 @@ video {
   }
 
 }
+
+.sample-content {
+  margin-left: 26px;
+  width:90vw;
+}
+
 
 /*-------------sample page end --------------------*/
 
