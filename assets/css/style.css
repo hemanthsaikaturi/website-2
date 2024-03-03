@@ -45,6 +45,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 20px 0;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -76,7 +77,6 @@ section {
 
 
 .section-header p {
-  margin: 40px 0 60px 0;
   padding: 0;
   font-size: 38px;
   line-height: 42px;
@@ -250,11 +250,12 @@ body{
   margin-top: 3px;
 }
 
-@media screen and (max-width: 321px) 
+@media screen and (max-width: 321px) {
   .header img {
     max-height: 32px;
 
   }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1223,7 +1224,7 @@ body{
 }
 
 
-//*-------------sample page --------------------*/
+/*-------------sample page --------------------*/
 
 .video {
   margin: 2%;
@@ -1600,36 +1601,4 @@ RESOURCE PAGE
   .resource-item p {
     font-size: smaller !important;
   }
-}
-
-
-@import url('//fonts.googleapis.com/css?family=Roboto:500');
-
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
-
-
-body {
-  padding: 64px 0;
-  text-align: center;
-}
-
-
-@import url('//fonts.googleapis.com/css?family=Roboto:500');
-
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
-
-
-body {
-  padding: 64px 0;
-  text-align: center;
-}
-
-
-@import url("//fonts.googleapis.com/css?family=Roboto:500");
-
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
-
-body {
-  padding-bottom: 0;
-  text-align: center;
 }
