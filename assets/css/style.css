@@ -246,11 +246,11 @@ body{
 .header {
   transition: all 0.5s;
   z-index: 997;
-  background-color: #fff;
+  background-color: #4A5D75;
 }
 
 .header.header-scrolled {
-  background: #fff;
+  background: #4A5D75;
   padding: 5px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -295,10 +295,16 @@ body{
   display: flex;
   list-style: none;
   align-items: center;
+  
+}
+
+.navbar-dropdown {
+  background-color: #4A5D75;
 }
 
 .navbar li {
   position: relative;
+  text-decoration: none;
 }
 
 .navbar a,
@@ -310,7 +316,7 @@ body{
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #013289;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -326,7 +332,7 @@ body{
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #4154f1;
+  color: #fff;
 }
 
 .navbar .getstarted,
@@ -354,7 +360,7 @@ body{
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #768597;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -378,7 +384,7 @@ body{
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #fff;
 }
 
 .navbar .dropdown:hover>ul {
@@ -440,7 +446,7 @@ body{
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #012970;
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -488,7 +494,8 @@ body{
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  color: #fff !important;
+  background-color: #4A5D75;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -497,13 +504,13 @@ body{
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #012970;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #4154f1;
+  color: #fff;
 }
 
 .navbar-mobile .getstarted,
@@ -519,7 +526,7 @@ body{
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #768597;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -538,7 +545,7 @@ body{
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #fff;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -1432,8 +1439,13 @@ video {
 .footer {
   width: 100%;
   float: inline-end;
-  background: #f6f9ff;
+  color: #fff;
+  background: #000;
   font-size: 14px;
+}
+
+.facebook {
+  color: #fff;
 }
 
 .footer .footer-newsletter {
@@ -1536,7 +1548,7 @@ video {
 .footer .footer-top .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: #fff;
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
