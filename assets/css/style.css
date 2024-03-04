@@ -12,39 +12,7 @@
 :root {
   scroll-behavior: smooth;
 }
-/* preloader */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
 
-#preloader h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-#spinner {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #007bff;
-  border-radius: 50%;
-  border-top-color: transparent;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-/*  */
 body {
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
@@ -68,7 +36,7 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -84,6 +52,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 20px 0;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -101,7 +70,7 @@ section {
 }
 
 .head {
-  padding-top: 60px !important;
+  padding-top: 60px;
 }
 
 .section-header h2 {
@@ -145,11 +114,6 @@ section {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .testimonial-item {
-    padding: 0px !important; 
-  }
-}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -267,25 +231,14 @@ body{
   opacity: 1;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-  .footer{
-    position: static !important;
-  }
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
-
-@media screen and (max-width: 575px) {
-  .dispBlock {
-    display:block;
-  }
-  
-}
-
 
 /*--------------------------------------------------------------
 # Header
@@ -320,10 +273,9 @@ body{
   margin-top: 3px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 321px) {
   .header img {
-    width: 90% !important;
-    padding: 10px 0px;
+    max-height: 32px;
 
   }
 }
@@ -1013,10 +965,6 @@ body{
   border-bottom: 0;
 }
 
-.faq{
-  width: 80%;
-}
-
 .faq .accordion-body {
   padding: 0 0 25px 0;
   border: 0;
@@ -1038,7 +986,7 @@ body{
 }
 
 .portfolio {
-  width: 100%;
+  background-color: #fafbff;
 }
 
 .portfolio .portfolio-wrap img {
@@ -1123,8 +1071,8 @@ body{
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
+  padding: 20px;
+  margin: 20px 20px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
   min-height: 320px;
@@ -1132,7 +1080,16 @@ body{
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+}
 
+@media screen and (width < 376px) {
+
+  .testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 20px;
+    margin: 5px;
+  }
+  
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1157,8 +1114,8 @@ body{
 
 .testimonials .testimonial-item p {
   font-style: italic;
-  text-align: justify;
   margin: 0 auto 15px auto;
+  text-align: justify;
 }
 
 .testimonials .swiper-pagination {
@@ -1334,12 +1291,6 @@ video {
   }
 
 }
-
-.sample-content {
-  margin-left: 26px;
-  width:90vw;
-}
-
 
 /*-------------sample page end --------------------*/
 
@@ -1659,6 +1610,32 @@ video {
   color: #012970;
 }
 
+/******************
+SAMPLE PAGE
+********************/
+.sample-page-content {
+  margin-left: 4%;
+}
+
+.sample-abstract-button-container {
+  display: flex;
+  margin-right: 16px !important;
+}
+
+.sample-single-button {
+  margin-right: 2vw;
+}
+
+.sample-button {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (width > 700px) {
+  .sample-page-content {
+    margin-left: 11%;
+  }
+}
 
 /******************
 RESOURCE PAGE
@@ -1666,9 +1643,7 @@ RESOURCE PAGE
 .resource-item {
   text-align: justify;
 }
-.resource-item h3{
-  font-weight: bold;
-}
+
 .center-button {
   display: flex;
   width: 100%;
@@ -1685,9 +1660,7 @@ RESOURCE PAGE
 }
 
 @media screen and (max-width: 768px) {
-  .resources-content {
+  .resource-item p {
     font-size: smaller !important;
-    margin: -10px 10px;
   }
 }
-
