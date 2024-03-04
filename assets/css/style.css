@@ -12,7 +12,39 @@
 :root {
   scroll-behavior: smooth;
 }
+/* preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
+#preloader h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+#spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #007bff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/*  */
 body {
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
@@ -36,7 +68,7 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -230,7 +262,7 @@ body{
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -240,6 +272,13 @@ body{
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    display: block;
+  }
+  
 }
 
 
@@ -279,7 +318,7 @@ body{
 @media screen and (max-width: 450px) {
   .header img {
     width: 90% !important;
-    padding: 10px 0;
+    padding: 10px 0px;
 
   }
 }
@@ -1622,7 +1661,9 @@ RESOURCE PAGE
 .resource-item {
   text-align: justify;
 }
-
+.resource-item h3{
+  font-weight: bold;
+}
 .center-button {
   display: flex;
   width: 100%;
@@ -1639,7 +1680,9 @@ RESOURCE PAGE
 }
 
 @media screen and (max-width: 768px) {
-  .resource-item p {
+  .resources-content {
     font-size: smaller !important;
+    margin: -10px 10px;
   }
 }
+

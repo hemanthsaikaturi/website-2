@@ -38,7 +38,9 @@
   ======================================================== -->
 </head>
 
-<body>
+    <div id="preloader">
+      <div id="spinner"></div>
+  </div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -62,7 +64,7 @@
             </ul>
           </li>
 
-          <li><a class="nav-link scrollto active" href="contact.html">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="contact.html">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -76,7 +78,7 @@
     <div class="container " data-aos="fade-up">
 
       <header class="section-header head">
-        <p>Contact Us</p>
+        <p>CONTACT US</p>
       </header>
 
       <div class="row gy-4 contacts">
@@ -152,6 +154,11 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    window.onload = function() {
+        document.getElementById("preloader").style.display = "none";
+    }
+</script>
 </body>
 
 </html>

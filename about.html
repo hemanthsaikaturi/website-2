@@ -38,6 +38,12 @@
   ======================================================== -->
 </head>
 <body>
+
+    <body>
+        <div id="preloader">
+          <div id="spinner"></div>
+      </div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -245,6 +251,12 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+ 
+ <script>
+      window.onload = function() {
+          document.getElementById("preloader").style.display = "none";
+      }
+  </script>
 
 </body>
 
