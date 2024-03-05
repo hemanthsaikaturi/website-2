@@ -149,6 +149,12 @@ section {
   }
 }
 
+@media screen and (min-width: 451px) and (max-width: 769px) {
+  .head {
+    padding-top: 80px !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -316,9 +322,9 @@ body{
   padding: 10px;
 }
 
-@media screen and (min-width > 1200px) {
+@media screen and (min-width : 1200px) {
   .header .logo img {
-    width: 63%;
+    width: 60%;
   }
 }
 
@@ -1763,4 +1769,9 @@ RESOURCE PAGE
   .resource-item p {
     font-size: smaller !important;
   }
+}
+
+.btn-light:hover {
+  background-color: transparent;
+  color: white;
 }
