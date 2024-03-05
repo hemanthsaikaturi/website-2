@@ -629,7 +629,7 @@ body{
   background: url(../images/Banner-img.jpg) top center no-repeat;
   background-color: #0000009c;
   background-size: cover;
-  /* background-blend-mode: darken !important; */
+  background-blend-mode: darken !important;
 }
 
 .banner {
