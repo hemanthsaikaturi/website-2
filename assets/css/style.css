@@ -1152,10 +1152,13 @@ body{
 @media (min-width : 325px) and (max-width : 376px) {
 
   .testimonials .testimonial-item {
-    height: 600px;
+    height: 560px;
     box-sizing: content-box;
     padding: 20px;
     margin-bottom: 18px;
+  }
+  .testimonials .swiper-pagination {
+    margin-top: 10px;
   }
   
 }
@@ -1164,6 +1167,9 @@ body{
   .testimonials .testimonial-item {
     height: 600px;
     margin: 20px 10px;
+  }
+  .testimonials .swiper-pagination {
+    margin-top: 10px;
   }
 }
 
