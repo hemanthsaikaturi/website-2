@@ -316,6 +316,12 @@ body{
   padding: 10px;
 }
 
+@media screen and (min-width > 1200px) {
+  .header .logo img {
+    width: 63%;
+  }
+}
+
 @media screen and (max-width < 500px) {
   .header .logo img {
     margin-top: 8px;
