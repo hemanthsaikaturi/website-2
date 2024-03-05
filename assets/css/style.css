@@ -313,8 +313,15 @@ body{
 .header .logo img {
   width: 70%;
   margin-right: 6px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+}
+
+@media screen and (width < 500px) {
+  .header .logo img {
+    width: 70%;
+    margin-right: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 .header .logo span {
