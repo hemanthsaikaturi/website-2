@@ -1133,21 +1133,38 @@ body{
   margin: 20px 20px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
-  height: 550px;
   display: flex;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
 }
+@media (max-width >1200px ){
+  .testimonials .testimonial-item {
+    height: 550px;
+  }
+}
 
-@media screen and (width < 376px) {
+@media (min-width : 376px) and (max-width : 426px) {
+  .testimonials .testimonial-item {
+    height: 510px;
+  }
+}
+@media (min-width : 325px) and (max-width : 376px) {
 
   .testimonials .testimonial-item {
+    height: 600px;
     box-sizing: content-box;
     padding: 20px;
-    margin: 5px;
+    margin-bottom: 18px;
   }
   
+}
+
+@media screen and (width < 325px) {
+  .testimonials .testimonial-item {
+    height: 600px;
+    margin: 20px 10px;
+  }
 }
 
 .testimonials .testimonial-item .testimonial-img {
